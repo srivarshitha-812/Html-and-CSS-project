@@ -19,13 +19,13 @@ ul li{
     display: inline-block;
     padding: 10px 20px;
 }
-.card img {
+.card1 img {
     max-width: 100%;         
     border-radius: 8px solid;      
     display: block;          
     margin: 0 auto;          
 }
-.card {
+.card1{
     
     border:10px solid gainsboro;
     padding:10px
@@ -51,4 +51,35 @@ nav-link{
     background-color: grey;
     color: #000;
     border-radius: 5px;
+}
+.card1
+{
+    padding: 20px;
+    background-color: #ffffff;
+}
+.curriculum-cards {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.curriculum-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 170px;
+    height: 170px;
+    flex-direction: column;
+    text-align: center;
+}
+.card-title {
+    color: #0033cc;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.card-description {
+    font-size: 14px;
+    color: #333;
 }
