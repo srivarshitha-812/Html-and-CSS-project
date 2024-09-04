@@ -8,8 +8,9 @@ h1{
     color:#0040df
 }
 nav{
-    background-color:goldenrod;
+    background-color:black;
     text-align: center;
+    color:aliceblue;
 }
 
 ul li{
@@ -36,4 +37,18 @@ ul li{
     text-align: center;
     padding:10px;
 
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav-link{
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-link:hover{
+    background-color: grey;
+    color: #000;
+    border-radius: 5px;
 }
