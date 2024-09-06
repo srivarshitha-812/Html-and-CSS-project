@@ -67,11 +67,14 @@ nav-link{
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 8px;
     width: 170px;
     height: 170px;
     flex-direction: column;
     text-align: center;
+}
+#curriculum{
+    margin-top: 0px;
 }
 .card-title {
     color: #0033cc;
@@ -136,3 +139,41 @@ nav-link{
 .cta-button:hover {
     background-color:#007bff; 
 }
+#overview{
+    margin-top:10px;
+    margin-bottom:0.5px;
+}
+#overview aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+    flex-wrap: wrap;
+    padding:20px;
+  }
+  article {
+    width: 270px;
+    height: 250px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0056b3;
+    font-weight: bold;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    margin: 7px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  article:hover {
+    background-color: yellow;
+  }
+  article:nth-child(odd){
+    margin-top: 100px;
+  }
+  article h3 {
+    margin: 0;
+    padding: 20px;
+  }
