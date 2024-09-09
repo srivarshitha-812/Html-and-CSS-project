@@ -1,155 +1,151 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-header{
-    text-align: center;
-}
-h1{
-    color:#0040df
-}
-nav{
-    background-color:black;
-    text-align: center;
-    color:aliceblue;
-}
-
-ul li{
-    list-style-type: none;
-    color:aliceblue;
-    display: inline-block;
-    padding: 10px 20px;
-}
-.card1 img {
-    max-width: 100%;         
-    border-radius: 8px solid;      
-    display: block;          
-    margin: 0 auto;          
-}
-.card1{
-    
-    border:10px solid gainsboro;
-    padding:10px
-}
-.footer{
- 
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding:10px;
-
-}
-ul li a{
-    text-decoration: none;
-    color: white;
-}
-nav-link{
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-.nav-link:hover{
-    background-color:#0056b3;
-    color: #000;
-    border-radius: 5px;
-}
-.card1
-{
-    padding: 20px;
-    background-color: #ffffff;
-}
-.curriculum-cards {
-    display: flex;
-    justify-content:space-evenly;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-.curriculum-card {
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 8px;
-    width: 170px;
-    height: 170px;
-    flex-direction: column;
-    text-align: center;
-}
-#curriculum{
-    margin-top: 0px;
-}
-.card-title {
-    color: #0033cc;
-    font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-.card-description {
-    font-size: 14px;
     color: #333;
-}
-
-.hero {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png');
-    background-size: cover;
-    background-position: center;
-    height: 500px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.6); 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-content {
-    color: white;
+    overflow-x: hidden;
+  }
+  h1,h2,h3{
+    font:400
+  }
+  a{
+    font-weight: 500;
+  }
+  header {
+    
+    color: blue;
+    padding: 20px;
     text-align: center;
-    z-index: 1; 
-}
-
-.hero-content h1 {
+  }
+  
+  header .logo {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png   ");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;  */
+    background-position:center;
+    background-size: cover;
+  
+    background-color: hsl(0,0,0,0.9);
+    position: relative;
+    width:auto;
+    min-height: 40vh;
+    height: 50vh;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 0px 0 15px 0;
     color: white;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    padding: 10px 20px;
-    background-color:#0056b3 ;
+  }
+  .logo >*{
+    z-index: 100;
+  }
+  header .logo::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #f4f4f4;
+    background-color: hsl(0 0 0);
+    opacity: .7;
+    border-radius: 10px;
+    z-index: 1;
+  
+  }
+   button{
+    padding: 15px 40px;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: all 400ms;
+  }
+  button:hover{
+    background-color: navy;
+  }
+  .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+  
+  }
+  section#overview{
+    margin-top: -20px;
+  }
+  header h1 {
+    margin: 10px 0;
+  }
+  
+  nav{
+    background-color: #000;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+    padding-bottom: 5px;
+  }
+  
+  nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color:#007bff; 
-}
-#overview{
-    margin-top:10px;
-    margin-bottom:0.5px;
-}
-#overview aside {
+    transition: all 2ms;
+    padding: 26px;
+  }
+  nav ul li a:hover {
+    color: white;
+    background-color: grey;
+    
+  }
+  nav ul li a:active{
+    background-color: blue;
+  }
+  nav ul li a[tabindex]:focus{
+    background-color: blue;
+  }
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #curriculum ul{
+    display: flex;
+    gap: 15px;
+    padding: 2px;
+  }
+  #curriculum li{
+    list-style: none;
+    padding: 11px;
+    padding-top: 29px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #overview aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: blue;
     flex-wrap: wrap;
-    padding:20px;
   }
   article {
     width: 270px;
@@ -162,7 +158,7 @@ nav-link{
     color: #0056b3;
     font-weight: bold;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    margin: 7px;
+    margin: 10px;
     transition: background-color 0.3s;
     cursor: pointer;
   }
@@ -176,4 +172,74 @@ nav-link{
   article h3 {
     margin: 0;
     padding: 20px;
+  }
+  section h2{
+    color: blue;
+  }
+  
+  section img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  #about div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  
+    }
+  #above h2{
+    color: blue
+  }
+  iframe{
+      aspect-ratio: 2/1;
+      width: 50%;
+      height: 100%;
+      position: center;
+    
+  }
+  
+  footer > div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  footer a{
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+  .icon_insta{
+   border-radius: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   cursor: pointer;
+   font-size: 30px;
+   background-color: #0056b3;
+   color: white;
+   transition: all 0.3s;
+  }
+  .icon_insta:hover{
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
   }
